@@ -48,6 +48,6 @@ public class Typecasting {
         double result = (f*b) + (i/c) - (d*s);
         System.out.println(result);
 
-
+        input.close();
     }
 }
