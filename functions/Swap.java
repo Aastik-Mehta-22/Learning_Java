@@ -11,6 +11,10 @@ public class Swap {
 
         // swap(a,b);
         // System.out.println(a + " "+ b);
+
+        String name = "Kunal Kushwa";
+        changeName(name);
+        System.out.println(name);
     }
 
     static void swap(int a, int b){
@@ -18,5 +22,9 @@ public class Swap {
         int temp = a;
         a = b;
         b = temp;
+    }
+
+    static void changeName(String name){
+        name  = " Rahul Rana";
     }
 }
