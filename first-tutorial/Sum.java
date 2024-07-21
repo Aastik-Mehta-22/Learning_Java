@@ -11,6 +11,6 @@ public class Sum {
         int ans = num1 + num2;
         System.out.println("Sum of two numbers is : "+num1+num2);//22
         System.out.println("Sum of two numbers is : "+ans);//4
-        //input.close();
+        // input.close();
     }
 }
