@@ -8,15 +8,15 @@ public class InfiniteArray {
         //first start with a box of size 2
         int start = 0;
         int end = 1;
-        int newStart = 0;
+       
         while(target > arr[end]){
-            newStart = end + 1;
+            int newStart = end + 1;
             end = end + (end-start+1)*2;
-         
+            start = newStart;
         }
 
         
-        return search(arr,target,newStart,end);
+        return search(arr,target,start,end);
     }
 
 
