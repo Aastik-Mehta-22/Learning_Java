@@ -73,7 +73,7 @@ public class mazeproblem {
         if(c < maze[0].length - 1){
             pathRestrictions(p + 'R', maze, r, c + 1); // R here for right;
         }
-
+ 
         
 
     }
