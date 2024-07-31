@@ -4,8 +4,11 @@ public class mazeproblem {
     public static void main(String[] args) {
         
         // paths(0, 0, 3,"");
-        ArrayList<String> ans = pathsStore(3, 3, "");
-        System.out.println(ans);
+        // ArrayList<String> ans = pathsStore(3, 3, "");
+        // System.out.println(ans); 
+        boolean[][] maze = new boolean[3][3]; // true means safe and false means obsatcles
+        maze[1][1] = true;
+        pathRestrictions("", maze, 0, 0);
         
     }
 
@@ -49,6 +52,30 @@ public class mazeproblem {
 
         return ans;
         
+    }
+
+
+    static void pathRestrictions(String p,boolean[][] maze,int r,int c){
+        
+        if(r == maze.length-1 && c == maze[0].length-1){
+            System.out.println(p);
+            return ;
+        }
+
+        if(maze[r][c]){ // true means there is obstacles an false means there is no obstacles
+                        // because by default value is false for boolean matrix;
+            return ;
+        }
+
+        if( r < maze.length -1){
+            pathRestrictions(p + 'D', maze, r+1, c); // D here for Down
+        }
+        if(c < maze[0].length - 1){
+            pathRestrictions(p + 'R', maze, r, c + 1); // R here for right;
+        }
+
+        
+
     }
 }
 
