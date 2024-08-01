@@ -40,7 +40,6 @@ public class introOOP {
         Student  random2 = new Student();
         System.out.println(random2.name);
 
-
         
     }
 
