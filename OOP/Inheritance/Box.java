@@ -20,6 +20,10 @@ public class Box {
         this.h = side;
     }
 
+    static void greeting(){
+        System.out.println("Hey, I am in box class. Greetings!");
+    }
+    
     Box(double l,double h,double w){
         this.l = l;
         this.h = h;

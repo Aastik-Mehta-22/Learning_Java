@@ -3,7 +3,7 @@ package Inheritance;
 public class Main {
     public static void main(String[] args) {
         
-        // Box box = new Box(4.6,7.9,9.9);
+        Box box = new Box(4.6,7.9,9.9);
         // Box box2 = new Box(box);
 
         // System.out.println(box.l + " " + box.w + " " + box.h);
@@ -32,5 +32,6 @@ public class Main {
         System.out.println(box6.h + " " + box6.w + " "+ box6.weight + " "+ box6.price);
 
 
+        Box.greeting();
     }
 }
