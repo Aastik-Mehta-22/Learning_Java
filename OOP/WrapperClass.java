@@ -22,6 +22,11 @@ public class WrapperClass {
         // when a non primitive is final,you can not reassign it
         // kunal = new A(null);
 
+        A obj = new A("Rndavdoifh");
+        System.out.println(obj); // it will show some random value 
+        
+
+
 
     }
 
