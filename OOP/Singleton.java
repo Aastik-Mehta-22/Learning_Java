@@ -1,3 +1,5 @@
+import access.A;
+
 public class Singleton {
     public static void main(String[] args) {
         
@@ -8,7 +10,9 @@ public class Singleton {
 
         // all three refrence variables aare pointing to just one object 
 
+        A atwo = new A(10,"Kunal");
 
+        System.out.println(atwo.getNum());
 
     }
 }
