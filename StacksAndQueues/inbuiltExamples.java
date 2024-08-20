@@ -1,6 +1,8 @@
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+
 
 
 public class inbuiltExamples{
@@ -28,6 +30,10 @@ public class inbuiltExamples{
         // // System.out.println(queue.peek()); // it just gets an item but did not remove it 
         // System.out.println(queue.remove());
         // System.out.println(queue.remove());
+
+
+        Deque<Integer> deque = new ArrayDeque<>();
+        
 
     }    
 }
